@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy_Birthday_Kun_Prim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: beige;">
+    
+    <p>HAPPY BIRTHDAY</p>
+    <br>
+    <p>ขอให้มีความสุขมากๆพบเจอแต่สิ่งดีๆ ได้กินของอร่อยๆ</p>
+    <p >เรียนได้เกรดดีๆ เป็นที่รักของหลายๆคน </p>
+    <img id="myImage" src="imagr/1.jpg" alt="รูปที่ 1">
+
+    <!-- วิดีโอจาก YouTube -->
+    <iframe src="https://www.youtube.com/embed/5u4xTa3LR2U/autoplay=1&mute=1" frameborder="0"  
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+     <!-- ปุ่มไปหน้าที่ 3 -->
+     <button onclick="goToPage3()">Come Over Here!!</button>
+
+    <script>
+        // รูปภาพที่ต้องการเปลี่ยน
+        const images = [
+            "imagr/1.jpg",
+            "imagr/2.jpg",
+            "imagr/3.jpg",
+            "imagr/4.jpg",
+            "imagr/5.jpg",
+            "imagr/6.jpg",
+            "imagr/7.jpg"
+        ];
+
+    let currentIndex = 0;
+
+    function changeImage() {
+        currentIndex = (currentIndex + 1) % images.length;  // เลื่อนลำดับรูปภาพไปเรื่อยๆ
+        document.getElementById("myImage").src = images[currentIndex];
+    }
+
+    // เปลี่ยนรูปทุกๆ 2 วินาที
+    setInterval(changeImage, 2000);
+    
+    // ฟังก์ชันสำหรับไปหน้าที่ 3
+    function goToPage3() {
+            window.location.href = 'page3.html'; // เปลี่ยนลิงก์เป็นหน้าที่คุณต้องการ
+        }
+    </script>
+</body>
+</html>

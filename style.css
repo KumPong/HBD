@@ -1,0 +1,51 @@
+/* จัดวางทุกอย่างให้อยู่กลางจอด้วย Flexbox */
+body {
+    display: flex;
+    flex-direction: column; /* จัดวางในแนวตั้ง */
+    justify-content: center; /* จัดตรงกลางในแนวนอน */
+    align-items: center;     /* จัดตรงกลางในแนวตั้ง */
+    height: 100vh;           /* ให้ body สูงเท่าหน้าจอ */
+    margin: 0;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+    margin-top: 10px; /* เพิ่มระยะห่างระหว่างรูปกับวิดีโอ */
+}
+
+h1, p {
+    margin: 10px 0;
+    font-size: xx-large;
+}
+
+button {
+    margin-top: 20px; /* เพิ่มระยะห่างระหว่างปุ่มกับวิดีโอ */
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/*Tag Selector*/
+p {
+    font-size: xx-large;
+    text-align: center;
+    margin: 10px 0;
+}
+/*Union Selector*/
+div, #box, .box{
+    padding: 50px;
+    margin: auto;
+    color: rgb(2, 2, 2);
+    font-size: xx-large;
+    background-color: rgb(177, 204, 240);
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
